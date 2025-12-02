@@ -29,21 +29,9 @@ It allows the contract owner to securely store, withdraw, and track ETH transact
 | `deposit(string)` | Deposit ETH into the wallet with an optional description |
 | `withdraw(address payable, uint256, string)` | Withdraw ETH to a specified address (only owner) |
 
----
-
-## 🧪 Example Interaction
-
-```solidity
-// Deposit ETH into the wallet
-basicWallet.deposit{value: 1 ether}("Initial funding");
-
-// Withdraw ETH (only owner can call)
-basicWallet.withdraw(payable(0xRecipientAddress), 0.5 ether, "Payment to vendor");
 
 ---
 
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
-
-```
